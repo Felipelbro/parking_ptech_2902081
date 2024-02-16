@@ -15,6 +15,7 @@ public class Registro {
     public Cupo cupo;
     public Carro carro;
     public Cliente cliente;
+    public Empleado empleado;
   
 ///Constructor por defecto
 
@@ -22,7 +23,7 @@ public class Registro {
     }
 
     public Registro(LocalDate fechaInicio, LocalTime horaInicio, LocalDate fechaFinal, LocalTime horaFinal, Long valor,
-            Cupo cupo, Carro carro, Cliente cliente) {
+            Cupo cupo, Carro carro, Cliente cliente, Empleado empleado) {
         this.fechaInicio = fechaInicio;
         this.horaInicio = horaInicio;
         this.fechaFinal = fechaFinal;
@@ -31,6 +32,7 @@ public class Registro {
         this.cupo = cupo;
         this.carro = carro;
         this.cliente = cliente;
+        this.empleado = empleado;
     }
 
 }
